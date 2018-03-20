@@ -1,6 +1,5 @@
 #pragma once
-#include "LargeMon.h"
-
+#include "Controller.h"
 
 namespace hopefully {
 
@@ -52,7 +51,7 @@ namespace hopefully {
 	private: System::Windows::Forms::Button^  startButton;
 
 	protected:
-		LargeMon laremon;
+		Controller controller;
 	private:
 		/// <summary>
 		/// Required designer variable.
@@ -392,12 +391,12 @@ private: System::Windows::Forms::Label^  playerLargemonDescLabel;
 			// label1
 			// 
 			this->label1->AutoSize = true;
-			this->label1->Font = (gcnew System::Drawing::Font(L"8-bit pusab", 8.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->label1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label1->ForeColor = System::Drawing::Color::White;
 			this->label1->Location = System::Drawing::Point(38, 65);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(194, 19);
+			this->label1->Size = System::Drawing::Size(98, 13);
 			this->label1->TabIndex = 2;
 			this->label1->Text = L"Enter Player Name:";
 			// 
@@ -420,7 +419,7 @@ private: System::Windows::Forms::Label^  playerLargemonDescLabel;
 			this->aPDbButton->FlatAppearance->MouseDownBackColor = System::Drawing::Color::Lime;
 			this->aPDbButton->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Red;
 			this->aPDbButton->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->aPDbButton->Font = (gcnew System::Drawing::Font(L"8-bit pusab", 11.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->aPDbButton->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 11.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->aPDbButton->ForeColor = System::Drawing::Color::White;
 			this->aPDbButton->Location = System::Drawing::Point(315, 181);
@@ -438,7 +437,7 @@ private: System::Windows::Forms::Label^  playerLargemonDescLabel;
 			this->addPlayerButton1->FlatAppearance->MouseDownBackColor = System::Drawing::Color::Firebrick;
 			this->addPlayerButton1->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Red;
 			this->addPlayerButton1->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->addPlayerButton1->Font = (gcnew System::Drawing::Font(L"8-bit pusab", 11.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+			this->addPlayerButton1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 11.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->addPlayerButton1->ForeColor = System::Drawing::SystemColors::HighlightText;
 			this->addPlayerButton1->Location = System::Drawing::Point(36, 254);
@@ -852,11 +851,11 @@ private: System::Windows::Forms::Label^  playerLargemonDescLabel;
 			this->aiNameLabel->AutoSize = true;
 			this->aiNameLabel->Dock = System::Windows::Forms::DockStyle::Right;
 			this->aiNameLabel->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->aiNameLabel->Font = (gcnew System::Drawing::Font(L"8-bit pusab", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->aiNameLabel->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->aiNameLabel->Location = System::Drawing::Point(66, 0);
+			this->aiNameLabel->Location = System::Drawing::Point(111, 0);
 			this->aiNameLabel->Name = L"aiNameLabel";
-			this->aiNameLabel->Size = System::Drawing::Size(130, 21);
+			this->aiNameLabel->Size = System::Drawing::Size(85, 16);
 			this->aiNameLabel->TabIndex = 2;
 			this->aiNameLabel->Text = L"USERNAME";
 			// 
@@ -874,11 +873,11 @@ private: System::Windows::Forms::Label^  playerLargemonDescLabel;
 			this->playerNameLabel->AutoEllipsis = true;
 			this->playerNameLabel->AutoSize = true;
 			this->playerNameLabel->Dock = System::Windows::Forms::DockStyle::Left;
-			this->playerNameLabel->Font = (gcnew System::Drawing::Font(L"8-bit pusab", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->playerNameLabel->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->playerNameLabel->Location = System::Drawing::Point(0, 0);
 			this->playerNameLabel->Name = L"playerNameLabel";
-			this->playerNameLabel->Size = System::Drawing::Size(130, 21);
+			this->playerNameLabel->Size = System::Drawing::Size(85, 16);
 			this->playerNameLabel->TabIndex = 1;
 			this->playerNameLabel->Text = L"USERNAME";
 			// 
@@ -888,8 +887,8 @@ private: System::Windows::Forms::Label^  playerLargemonDescLabel;
 			this->generateLargemonButton->Cursor = System::Windows::Forms::Cursors::Hand;
 			this->generateLargemonButton->FlatAppearance->BorderSize = 0;
 			this->generateLargemonButton->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->generateLargemonButton->Font = (gcnew System::Drawing::Font(L"8-bit pusab", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
+			this->generateLargemonButton->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular,
+				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
 			this->generateLargemonButton->ForeColor = System::Drawing::SystemColors::HighlightText;
 			this->generateLargemonButton->Location = System::Drawing::Point(13, 88);
 			this->generateLargemonButton->Name = L"generateLargemonButton";
@@ -937,7 +936,7 @@ private: System::Windows::Forms::Label^  playerLargemonDescLabel;
 				static_cast<System::Int32>(static_cast<System::Byte>(192)), static_cast<System::Int32>(static_cast<System::Byte>(0)));
 			this->button1->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Yellow;
 			this->button1->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->button1->Font = (gcnew System::Drawing::Font(L"8-bit pusab", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->button1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->button1->ForeColor = System::Drawing::SystemColors::ControlLightLight;
 			this->button1->Location = System::Drawing::Point(118, 27);
@@ -955,7 +954,7 @@ private: System::Windows::Forms::Label^  playerLargemonDescLabel;
 				static_cast<System::Int32>(static_cast<System::Byte>(192)), static_cast<System::Int32>(static_cast<System::Byte>(0)));
 			this->button2->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Yellow;
 			this->button2->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->button2->Font = (gcnew System::Drawing::Font(L"8-bit pusab", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->button2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->button2->ForeColor = System::Drawing::SystemColors::ControlLightLight;
 			this->button2->Location = System::Drawing::Point(421, 27);
@@ -968,12 +967,12 @@ private: System::Windows::Forms::Label^  playerLargemonDescLabel;
 			// label2
 			// 
 			this->label2->AutoSize = true;
-			this->label2->Font = (gcnew System::Drawing::Font(L"8-bit pusab", 9.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->label2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label2->ForeColor = System::Drawing::Color::Red;
 			this->label2->Location = System::Drawing::Point(267, 4);
 			this->label2->Name = L"label2";
-			this->label2->Size = System::Drawing::Size(230, 21);
+			this->label2->Size = System::Drawing::Size(136, 16);
 			this->label2->TabIndex = 2;
 			this->label2->Text = L"Select A Game Mode";
 			// 
@@ -1111,12 +1110,15 @@ private: System::Void aPDbButton_Click(System::Object^  sender, System::EventArg
 	if (this->playerNameTextbox->Text->IsNullOrWhiteSpace(this->playerNameTextbox->Text))
 	{
 		this->errorMessageAddPlayerTextbox->Text = L"You have to input something, don't you want to battle anymore";
+		
 	}
 	else {
+		controller.player->setName(this->playerNameTextbox->Text);
 		this->pictureBox1->Show();
 		this->addPlayerButton1->Show();
 		this->AddPlayerTextBox->Hide();
 		this->addPlayerButton1->Text = L"Start Game";
+
 	}	
 }
 

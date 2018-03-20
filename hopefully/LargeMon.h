@@ -1,10 +1,8 @@
 #pragma once
 #include <iostream>
-
-using namespace System;
 using namespace std;
 
-ref class LargeMon
+class LargeMon
 {
 public:
 	LargeMon(const string &, const string &, const string &, const string &, int, int);
@@ -16,12 +14,12 @@ public:
 	void setAttackPoints(int);
 	void setHealthPoints(int);
 
-	string getType();
-	string getName();
-	string getSize();
-	string getDescription();
-	int getAttackPoints();
-	int getHealthPoints();
+	string getType() const;
+	string getName() const;
+	string getSize() const;
+	string getDescription() const;
+	int getAttackPoints()const;
+	int getHealthPoints()const;
 
 private:
 	string ltype;
@@ -31,4 +29,3 @@ private:
 	int lattackPoints;
 	int lhealthPoints;
 };
-
